@@ -1,0 +1,9 @@
+/Users/fpearson/projects/Plugins/Plugins/bin/Debug/net452/Plugins.dll
+/Users/fpearson/projects/Plugins/Plugins/bin/Debug/net452/Plugins.pdb
+/Users/fpearson/projects/Plugins/Plugins/bin/Debug/net452/Microsoft.Crm.Sdk.Proxy.dll
+/Users/fpearson/projects/Plugins/Plugins/bin/Debug/net452/Microsoft.Xrm.Sdk.dll
+/Users/fpearson/projects/Plugins/Plugins/obj/Debug/net452/Plugins.csproj.CoreCompileInputs.cache
+/Users/fpearson/projects/Plugins/Plugins/obj/Debug/net452/Plugins.AssemblyInfoInputs.cache
+/Users/fpearson/projects/Plugins/Plugins/obj/Debug/net452/Plugins.AssemblyInfo.cs
+/Users/fpearson/projects/Plugins/Plugins/obj/Debug/net452/Plugins.dll
+/Users/fpearson/projects/Plugins/Plugins/obj/Debug/net452/Plugins.pdb
