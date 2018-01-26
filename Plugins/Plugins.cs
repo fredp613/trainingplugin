@@ -54,7 +54,7 @@ namespace Microsoft.Crm.Sdk.Samples
                         var response = client.UploadString(new Uri("http://rest.learncode.academy/api/myapi/inquiries/"), "POST", data);
                         var apiID = response.Substring(response.IndexOf("id\":\"") + 5, 24);                        
                         var currentRecord = _service.Retrieve("new_inquiry", entity.Id, new Xrm.Sdk.Query.ColumnSet(true));
-                        currentRecord["new_apiid"] = apiID;
+                        currentRecord["new_name"] = apiID;
                         _service.Update(currentRecord);
                         tracingService.Trace("web client executed successfully, new record created:" + apiID);
                     }
@@ -122,7 +122,7 @@ namespace Microsoft.Crm.Sdk.Samples
 
                     using (WebClient client = new WebClient())
                     {
-                        var apiId = postEntity.GetAttributeValue<string>("new_apiid");
+                        var apiId = postEntity.GetAttributeValue<string>("new_name");
                         tracingService.Trace("1 web client plugin executed successfully, the record id is: " + apiId);
                         var data = String.Format("{{\"id\": \"{0}\", \"Response\": \"{1}\"}}", apiId, entity.GetAttributeValue<string>("new_response"));
                         client.Headers.Add(HttpRequestHeader.ContentType, "application/json");
